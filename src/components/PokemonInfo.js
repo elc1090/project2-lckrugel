@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 
 import captalizeFirstLetter from '../utils/captalizeFirstLetter';
-import typeDisplay from './TypeDisplay';
+import typeDisplay from '../utils/typeDisplay';
 import './PokemonInfo.css';
 
 
