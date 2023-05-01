@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project2-lckrugel/static/css/main.9e5ce100.css",
+    "main.js": "/project2-lckrugel/static/js/main.cce92ce3.js",
+    "index.html": "/project2-lckrugel/index.html",
+    "main.9e5ce100.css.map": "/project2-lckrugel/static/css/main.9e5ce100.css.map",
+    "main.cce92ce3.js.map": "/project2-lckrugel/static/js/main.cce92ce3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e5ce100.css",
+    "static/js/main.cce92ce3.js"
+  ]
+}
