@@ -9,12 +9,14 @@ import PokemonInfo from "./components/PokemonInfo";
 import Search from "./components/Search";
 import TypeRelationsInfo from "./components/TypeRelationsInfo";
 import typeRelations from "./utils/typeRelations";
+import Errors from "./utils/Errors"
 
 
 export default function App() {
   const [currentPokemon, setCurrentPokemon] = useState();
   const [currentTypes, setCurrentTypes] = useState();
   const [pokemonSearch, setPokemonSearch] = useState(7); // Vem com o id padrão do Squirtle
+  const [error, throwError] = useState(false);
 
   useEffect(() => {
     async function getPokemonAndTypes(pokemonSearch) {
@@ -34,13 +36,14 @@ export default function App() {
             }
             setCurrentTypes(types);
           } catch(e) {
-            console.log("Could not get types from API."+e);
+            console.log("Could not get types from API."+e);            
             return;
           }
         }
         
       } catch(e){
         console.log("Could not get Pokemon from API."+e);
+        throwError(true);
         return;
       }
     }
@@ -48,11 +51,9 @@ export default function App() {
     getPokemonAndTypes(pokemonSearch);
   }, [pokemonSearch])
 
-
   function getTypeRelations(currentTypes) {    
     return typeRelations(currentTypes);   
   }
-
 
   return (
     <Container id="App" fluid className="mt-5">
@@ -73,6 +74,9 @@ export default function App() {
             }
           </Col>
         </Row>
+      }
+      { error && 
+      <Errors></Errors>
       }
     </Container>
   )
