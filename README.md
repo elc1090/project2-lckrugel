@@ -4,7 +4,7 @@
 ![Screenshot do projeto]()
 ### Deploy
 
-[Link]()  
+[Link](https://elc1090.github.io/project2-lckrugel/)  
 
 
 ### Desenvolvedor
