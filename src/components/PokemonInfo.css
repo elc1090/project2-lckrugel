@@ -1,0 +1,31 @@
+#PokemonInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#PokemonInfo img {
+  width: 300px;
+  align-self: center;
+}
+
+#name {
+  align-self: center;
+}
+
+#types {
+  align-self: center;
+}
+
+#abilities {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+#abilities li {
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: max-content;
+  padding: 5px;
+}

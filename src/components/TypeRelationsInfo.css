@@ -1,0 +1,13 @@
+#attacking {
+  justify-content: center;
+  border: 3px solid #b69f9f;
+}
+
+#defending {
+  border: 3px solid #b69f9f;
+}
+
+#TypesInfo ul {
+  display: flex;
+  flex-wrap: wrap;
+}

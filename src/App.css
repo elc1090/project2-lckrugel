@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap');
+
+#App {
+  font-family: 'Chakra Petch', sans-serif;
+  color: #310505;
+}
+
+header {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #000;
+}
+
+h1 {  
+  flex-basis: 650px;   
+  font-weight: 700; 
+}
+
+h2, h5 {
+  font-weight: 500;
+}
+
+#Info {
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+#PokemonInfo {
+  width: 450px;
+}
+
+#TypesInfo {
+  width: 550px;
+}
